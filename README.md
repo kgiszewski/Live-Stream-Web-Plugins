@@ -24,7 +24,7 @@ Download the whole repo or just what you want.
 
 All of these plugins work with OBS and XSplit since they just use the browser view in each respective app. 
 
-With XSplit it must be hosted on a web server since XSplit does not support local files.
+With XSplit drag the `index.html` file of the plugin onto a scene. If you try to add it through the dialog, it'll not let you set `file://` as the protocol. You of course can host it on the web too.
 
 ![xsplit](img/xsplit-install.png)
 
