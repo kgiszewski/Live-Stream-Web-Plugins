@@ -1,6 +1,6 @@
 # Live Stream Web Plugins
 
-This repo contains free easy-to-use plugins that can enhance your Live Streaming production.
+This repo contains free easy-to-use plugins that can enhance your Live Streaming production. These plugins get used on our live YouTube show which can be found [here](https://www.youtube.com/watch?v=1gnFUAa89ns) for some great plugin preview goodness.
 
 ## What can you do?
 
