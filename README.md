@@ -22,6 +22,10 @@ Send a PR to this repo for either changes to existing plugins or brand new ones.
 
 All of these plugins work with OBS and XSplit since they just use the browser view in each respective app. 
 
+Note with XSplit it must be hosted on a web server since XSplit does not support local files.
+
+With OBS you can host locally on a computer (easiest) or place on a web server.
+
 ## Install
 
 Download the whole repo or just what you want. Simply choose a local file from inside OBS or XSplit on your production computer. Move the plugin on the screen to the desired spot. Enjoy.
