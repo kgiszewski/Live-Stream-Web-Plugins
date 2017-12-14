@@ -18,17 +18,21 @@ Want to integrate with a different feed? Alter it.
 
 Send a PR to this repo for either changes to existing plugins or brand new ones. I would prefer not to get pretty much the same plugin with different styles, please only send meaningful updates. Please provide a thumbnail and a README.md for new plugins.
 
-## OBS and XSplit Support
+## Install - OBS and XSplit
+
+Download the whole repo or just what you want. 
 
 All of these plugins work with OBS and XSplit since they just use the browser view in each respective app. 
 
-Note with XSplit it must be hosted on a web server since XSplit does not support local files.
+With XSplit it must be hosted on a web server since XSplit does not support local files.
+
+![xsplit](img/xsplit-install.png)
 
 With OBS you can host locally on a computer (easiest) or place on a web server.
 
-## Install
+Move the plugin on the screen to the desired spot. Enjoy.
 
-Download the whole repo or just what you want. Simply choose a local file from inside OBS or XSplit on your production computer. Move the plugin on the screen to the desired spot. Enjoy.
+![xsplit](img/obs-install.png)
 
 ## Browse the plugins
 
