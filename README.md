@@ -37,3 +37,7 @@ Move the plugin on the screen to the desired spot. Enjoy.
 ## Browse the plugins
 
 Each plugin has a README and a thumbnail, browse the repo to discover more.
+
+## Custom plugins
+
+Not seeing what you want? Reach out by creating an issue (above on the toolbar) and just maybe it might get created.
