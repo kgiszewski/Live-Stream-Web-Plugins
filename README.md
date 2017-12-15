@@ -14,9 +14,9 @@ Each plugin is a tiny webpage powered with CSS, Javascript and HTML.
 
 A few more to look at:
 
-![thumb](Date%20and%20Time/Countdown%20Timer/img/thumb.gif)
+[![thumb](Date%20and%20Time/Countdown%20Timer/img/thumb.gif)](Date%20and%20Time/Countdown%20Timer)
 
-![thumb](Date%20and%20Time/Timer%20Up/img/thumb.gif)
+[![thumb](Date%20and%20Time/Timer%20Up/img/thumb.gif)](Date%20and%20Time/Timer%20Up)
 
 Don't like the styles, change them locally.
 
