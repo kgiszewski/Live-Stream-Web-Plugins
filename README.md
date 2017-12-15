@@ -6,7 +6,7 @@ This repo contains free easy-to-use plugins that can enhance your Live Streaming
 
 For a video demo, watch [this](https://www.youtube.com/watch?v=ZMJpKGmxdB0)!
 
-Let's say you want to add a crawler to the bottom of your page but want it plugged into a news feed rather than type it in. Use [this](https://github.com/kgiszewski/Live-Stream-Web-Plugins/tree/master/News/Tech%20Headlines) plugin to pull that off. It will looks something like this:
+Let's say you want to add a crawler to the bottom of your page but want it plugged into a news feed rather than type it in. Use [this](https://github.com/kgiszewski/Live-Stream-Web-Plugins/tree/master/News/Tech%20Headlines) plugin to pull that off. It will look something like this:
 
 [![Crawl](News/Tech%20Headlines/img/thumb.gif)](News/Tech%20Headlines)
 
