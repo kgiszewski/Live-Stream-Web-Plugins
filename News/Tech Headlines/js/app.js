@@ -21,7 +21,7 @@ var app = (function () {
 				
 				var concatHeadlines = headlines.join(" - ");
 				
-				$("#marquee").text(concatHeadlines);
+				$("marquee").text(concatHeadlines);
 			}
 		});
 	}
