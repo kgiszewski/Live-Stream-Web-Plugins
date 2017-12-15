@@ -1,5 +1,4 @@
-# Timer Up
-
+# Countdown Timer
 A simple plugin powered by Moment.js and Coundown.js.
 
 Highly customizable, set the date in the future or just add a few seconds from now.
