@@ -12,6 +12,12 @@ Let's say you want to add a crawler to the bottom of your page but want it plugg
 
 Each plugin is a tiny webpage powered with CSS, Javascript and HTML. 
 
+A few more to look at:
+
+![thumb](Date%20and%20Time/Countdown%20Timer/img/thumb.gif)
+
+![thumb](Date%20and%20Time/Timer%20Up/img/thumb.gif)
+
 Don't like the styles, change them locally.
 
 Want to integrate with a different feed? Alter it.
