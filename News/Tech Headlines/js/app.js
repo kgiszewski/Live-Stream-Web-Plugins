@@ -8,7 +8,8 @@ var app = (function () {
 		
 		var headlines = [
 			'Follow the show on Twitter @BobAndKevinShow',
-			'Please share, like & subscribe the show!'
+			'Please share, like & subscribe the show!',
+			'Headlines from TechCrunch'
 		];
 		
 		$.ajax({
@@ -20,7 +21,7 @@ var app = (function () {
 				headlines.push(data.articles[i].title);
 				
 				var concatHeadlines = headlines.join(" - ");
-				
+							
 				$("marquee").text(concatHeadlines);
 			}
 		});
