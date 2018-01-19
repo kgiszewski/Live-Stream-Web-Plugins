@@ -10,13 +10,16 @@ var app = (function () {
 		$.when(
 			//note we're using a CORS hack here
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://cointelegraph.com/rss"),
-			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.recode.net/rss/current")
+			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.recode.net/rss/current"),
+			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://techcrunch.com/feed/"),
+			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.cnet.com/rss/news/")
 		).done(function() {
-			//console.log(headlines.length);
+			console.log(headlines.length);
 			
 			shuffleArray(headlines);
 			
-			headlines.unshift('Headlines from cointelegraph.com & recode.net');
+			//don't forget to attribute your feeds
+			headlines.unshift('Headlines from CoinTelegraph.com, CNET, TechCrunch & Recode.net');
 			headlines.unshift('Please share, like & subscribe the show!');
 			headlines.unshift('Follow the show on Twitter @BobAndKevinShow');
 			
