@@ -18,6 +18,8 @@ A few more to look at:
 
 [![thumb](Date%20and%20Time/Timer%20Up/img/thumb.gif)](Date%20and%20Time/Timer%20Up)
 
+[![thumb](News/Weather/img/thumb.gif)](News/Weather)
+
 Don't like the styles, change them locally.
 
 Want to integrate with a different feed? Alter it.
