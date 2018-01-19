@@ -6,8 +6,7 @@ var app = (function () {
 		getHeadlines();
 	}
 	
-	var getHeadlines = function () {
-		
+	var getHeadlines = function () {		
 		$.when(
 			//note we're using a CORS hack here
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://cointelegraph.com/rss"),
@@ -25,7 +24,7 @@ var app = (function () {
 							
 			$("marquee").text(concatHeadlines);
 		}).fail(function(e){
-			console.log(e);
+			//console.log(e);
 			document.writeln("<span style='color: red;'>" + e.statusText + "</span>");
 		});	
 	}
@@ -34,10 +33,7 @@ var app = (function () {
 		return $.ajax({
 			type: "GET",
 			url: url,			
-			dataType: "xml",
-			xhrFields: {
-			  withCredentials: false
-		   }
+			dataType: "xml"
 		}).done(function(data) {
 			addHeadlines(data);
 		});
