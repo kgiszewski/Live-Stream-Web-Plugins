@@ -14,7 +14,7 @@ var app = (function () {
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://techcrunch.com/feed/"),
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.cnet.com/rss/news/")
 		).done(function() {
-			console.log(headlines.length);
+			//console.log(headlines.length);
 			
 			shuffleArray(headlines);
 			
