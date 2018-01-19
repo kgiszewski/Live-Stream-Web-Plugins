@@ -46,7 +46,9 @@ var app = (function () {
 		$(data).find("item").each(function () {
 			var el = $(this);
 
-			headlines.push(el.find("title").text());
+			//headlines.push(cleanHeadline("Hello&nbsp;World!%20Hi There!"));
+			
+			headlines.push(cleanHeadline(el.find("title").text()));
 		});
 	}
 	
@@ -57,6 +59,10 @@ var app = (function () {
 			array[i] = array[j];
 			array[j] = temp;
 		}
+	}
+	
+	var cleanHeadline = function(input) {
+		return unescape(input).replace(/&nbsp;/gi,' ');
 	}
 
 	return {
