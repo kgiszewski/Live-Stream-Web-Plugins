@@ -10,8 +10,8 @@ var app = (function () {
 		$.when(
 			//note we're using a CORS hack here
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://cointelegraph.com/rss"),
-			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.recode.net/rss/current"),
-			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://techcrunch.com/feed/"),
+			//getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.recode.net/rss/current"),
+			//getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://techcrunch.com/feed/")
 			getRssSourcePromise("https://cors-anywhere.herokuapp.com/https://www.cnet.com/rss/news/")
 		).done(function() {
 			//console.log(headlines.length);
@@ -19,7 +19,7 @@ var app = (function () {
 			shuffleArray(headlines);
 			
 			//don't forget to attribute your feeds
-			headlines.unshift('Headlines from CoinTelegraph.com, CNET, TechCrunch & Recode.net');
+			headlines.unshift('Headlines from CoinTelegraph.com, CNET & Recode.net');
 			headlines.unshift('Please share, like & subscribe the show!');
 			headlines.unshift('Follow the show on Twitter @BobAndKevinShow');
 			
@@ -36,7 +36,10 @@ var app = (function () {
 		return $.ajax({
 			type: "GET",
 			url: url,			
-			dataType: "xml"
+			dataType: "xml",
+			beforeSend: function(request) {
+				request.setRequestHeader("origin", "http://bobandkevinshow.com");
+			  },
 		}).done(function(data) {
 			addHeadlines(data);
 		});
