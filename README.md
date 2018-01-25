@@ -22,6 +22,9 @@ A few more to look at:
 
 [![thumb](News/Weather/img/thumb.gif)](News/Weather)
 
+[![thumb](/News/CryptoRates/img/thumb.gif)](News/CryptoRates)
+
+
 Don't like the styles, change them locally.
 
 Want to integrate with a different feed? Alter it.
