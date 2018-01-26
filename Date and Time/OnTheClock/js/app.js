@@ -19,7 +19,7 @@ var app = (function () {
 		
 		var secondsLabel = (seconds > 9) ? seconds: "0" + seconds;
 		
-		$("h1 > span").text(secondsLabel); 
+		$(".clock").text(secondsLabel); 
 	}
 	
 		
