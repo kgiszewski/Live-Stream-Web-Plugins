@@ -8,38 +8,46 @@
 		<div id="onClock" class="green">
 			<h1>On the clock</h1>
 			<div class="clock"></div>
-		</div>
+		</div>	
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="js/flipclock.min.js"></script>
 			<script type="text/javascript">
 		var clock;
 		
+		var initialTime = 90;
+		var showYellow = 45;
+		var showRed = 15;
+		
 		$(document).ready(function() {
 			var time = 0;
-			var clock = new FlipClock($('.clock'), 90, {
+			
+			var $clock = $('.clock');
+			var $clockWrapper = $('#onClock');
+			
+			clock = new FlipClock($clock, initialTime, {
 				// Create a minute counter
 				clockFace: 'MinuteCounter',
 				countdown: true,
 				callbacks: {
 		        	stop: function() {
-						//console.log("stop");
-						$('.clock').removeClass("red");
-						clock.setTime(91);
+						$clockWrapper.removeClass("red");						
+						clock.setTime(initialTime + 1);
 						clock.start();	
 					},
-					interval: function() {
-						time = clock.getFaceValue();
-						//var time = 45;
-						//console.log("tick");
-						//if(time == 45){
-						//	$('#onClock').removeClass("green").addClass("yellow");
-						//} else if(time == 15){
-						//	$('#onClock').removeClass("yellow").addClass("red");
-						//}
-					}
-					
-		        }
-				
+					interval: function() {	
+						if(clock){
+							var time = clock.time.time;
+							
+							if(time > showYellow){							
+								$clockWrapper.addClass("green").removeClass("red");
+							} else if(time == showYellow){
+								$clockWrapper.removeClass("green").addClass("yellow");
+							} else if(time == showRed){
+								$clockWrapper.removeClass("yellow").addClass("red");
+							}							
+						}											
+					}					
+		        }				
 			});
 		});
 	</script>
