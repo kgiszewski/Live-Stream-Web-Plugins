@@ -24,6 +24,7 @@ A few more to look at:
 
 [![thumb](/News/CryptoRates/img/thumb.gif)](News/CryptoRates)
 
+[![thumb](/Date%20and%20Time/OnTheClock/img/thumb2.gif)](/Date%20and%20Time/OnTheClock)
 
 Don't like the styles, change them locally.
 
