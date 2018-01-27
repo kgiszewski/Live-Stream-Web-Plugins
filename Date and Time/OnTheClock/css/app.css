@@ -1,5 +1,36 @@
 h1 {
 	font-family: 'Haettenschweiler';
-	color: white;	
-	font-size: 48px;
+	color: #000;	
+	font-size: 40px;
+	margin: 0;
 }
+
+#onClock {
+	background-color: #ccc;
+	text-align: center;
+	width: 200px;
+	padding: 8px 0px;
+}
+
+.green {
+	background-color: #00ff00!important;
+}
+
+.red {
+	background-color: #ff0000!important;
+}
+
+.yellow {
+	background-color: #ffff00!important;
+}
+
+/*
+.clock {
+	width: 96%;
+	background-color: #FFF;
+	color: #000;
+	margin: 0 auto;
+	font-size: 32px;
+	padding: 6px 0px;
+}
+*/
