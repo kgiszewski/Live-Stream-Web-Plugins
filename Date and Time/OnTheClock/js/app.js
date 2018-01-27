@@ -1,17 +1,12 @@
 var app = (function () {
-	
-	var clock;		
-	var initialTime = 90;
-	var showYellow = 45;
-	var showRed = 15;
-	
-	$(document).ready(function() {
-		var time = 0;
-		
+	var start = function() {
+		var initialTime = 90;
+		var showYellow = 45;
+		var showRed = 15;		
 		var $clock = $('.clock');
 		var $clockWrapper = $('#onClock');
 		
-		clock = new FlipClock($clock, initialTime, {
+		var clock = new FlipClock($clock, initialTime, {
 			// Create a minute counter
 			clockFace: 'MinuteCounter',
 			countdown: true,
@@ -36,11 +31,13 @@ var app = (function () {
 				}					
 			}				
 		});
-	});
+	}
 	
 	return {
 		start: start
 	}		
 })();
 
-app.start();
+$(function() {	
+	app.start();
+});
