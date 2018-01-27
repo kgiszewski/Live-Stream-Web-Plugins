@@ -5,4 +5,4 @@ Starts at 90 seconds, turns yellow at 45 seconds and red at 15 seconds.
 
 Configurable by updating the Javascript.
 
-![thumb](img/thumb.gif)
+![thumb](img/thumb2.gif)
