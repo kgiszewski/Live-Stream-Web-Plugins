@@ -17,13 +17,25 @@ h1 {
 }
 
 .green {
-	background-color: #00ff00!important;
+	background-color: #007622!important;
+}
+
+.green h1 {
+	color: #ddd !important;
 }
 
 .red {
-	background-color: #ff0000!important;
+	background-color: #990000!important;
+}
+
+.red h1 {
+	color: #ddd !important;
 }
 
 .yellow {
-	background-color: #ffff00!important;
+	background-color: #ffd911!important;
+}
+
+.yellow h1 {
+	color: #333 !important;
 }
