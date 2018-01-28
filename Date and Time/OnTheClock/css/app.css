@@ -12,6 +12,10 @@ h1 {
 	padding: 8px 0px;
 }
 
+.clock {
+	margin-left: 46px;
+}
+
 .green {
 	background-color: #00ff00!important;
 }
@@ -23,14 +27,3 @@ h1 {
 .yellow {
 	background-color: #ffff00!important;
 }
-
-/*
-.clock {
-	width: 96%;
-	background-color: #FFF;
-	color: #000;
-	margin: 0 auto;
-	font-size: 32px;
-	padding: 6px 0px;
-}
-*/

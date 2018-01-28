@@ -13,7 +13,7 @@ var app = (function () {
 			callbacks: {
 				stop: function() {
 					$clockWrapper.removeClass("red");						
-					clock.setTime(initialTime + 1);
+					clock.setTime(initialTime);
 					clock.start();	
 				},
 				interval: function() {	
