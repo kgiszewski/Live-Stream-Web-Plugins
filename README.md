@@ -26,6 +26,8 @@ A few more to look at:
 
 [![thumb](/Date%20and%20Time/OnTheClock/img/thumb2.gif)](/Date%20and%20Time/OnTheClock)
 
+[![thumb](/Date%20and%20Time/OnTheClock%20Playlist/img/thumb.gif)](/Date%20and%20Time/OnTheClock%20Playlist)
+
 Don't like the styles, change them locally.
 
 Want to integrate with a different feed? Alter it.
