@@ -5,9 +5,11 @@ var app = (function () {
 	var $clockWrapper = $('#onClock');
 	var $headlineWrapper = $('#headline');
 	var $headline = $('#headline h1');
+	var $nextHeadline = $('#headline h2');
 	var headlineIndex = -1;
 	var audio = new Audio('mp3/beep_short.mp3');
 	var delayInMillisecondsBetweenHeadlines = 3000;
+	var showNextHeadlineUnderCurrent = true;
 	
 	var start = function(playlist) {	
 		var clock = new FlipClock($clock, {
@@ -18,7 +20,6 @@ var app = (function () {
 					setTimeout(function(){
 						handleHeadlineChange(clock);	
 					}, delayInMillisecondsBetweenHeadlines);
-									
 				},
 				interval: function() {	
 					handleClockColor(clock);							
@@ -28,7 +29,23 @@ var app = (function () {
 		
 		handleHeadlineChange(clock);
 	}
+	
+	var getNextHeadlineText = function() {
 		
+		if(!showNextHeadlineUnderCurrent) {
+			return;
+		}
+		
+		var headline = "";
+		var nextHeadlineIndex = headlineIndex + 1;
+		
+		if(playlist[nextHeadlineIndex]) {
+			headline = "Next Up: " + playlist[nextHeadlineIndex].headline;
+		}
+		
+		return headline;
+	}
+			
 	var handleHeadlineChange = function(clock) {							
 		//get next headline
 		headlineIndex++;
@@ -39,7 +56,7 @@ var app = (function () {
 			
 			return;
 		}
-		
+				
 		audio.play();
 				
 		var nextHeadline = playlist[headlineIndex];		
@@ -47,6 +64,7 @@ var app = (function () {
 		$headlineWrapper.fadeOut(function() {
 			$headlineWrapper;
 			$headline.text(nextHeadline.headline);
+			$nextHeadline.text(getNextHeadlineText());
 		}).fadeIn();
 		
 		$clockWrapper.removeClass("red");		
