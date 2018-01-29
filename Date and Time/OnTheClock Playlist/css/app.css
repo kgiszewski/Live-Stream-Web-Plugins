@@ -1,0 +1,63 @@
+#canvas {
+	width: 1300px;
+	height: 730px;
+	position: relative;
+}
+
+h1 {
+	font-family: 'Haettenschweiler';
+	color: #000;	
+	font-size: 40px;
+	margin: 0;
+}
+
+#onClock {
+	background-color: #ccc;
+	text-align: center;
+	width: 200px;
+	padding: 8px 0px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+#headline {
+	position: absolute;
+	bottom: 0;
+	padding: 20px 30px;
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+}
+
+#headline h1 {
+	color: white;
+	font-size: 75px;
+}
+
+.clock {
+	margin-left: 46px;
+}
+
+.green {
+	background-color: #007622!important;
+}
+
+.green h1 {
+	color: #ddd !important;
+}
+
+.red {
+	background-color: #990000!important;
+}
+
+.red h1 {
+	color: #ddd !important;
+}
+
+.yellow {
+	background-color: #ffd911!important;
+}
+
+.yellow h1 {
+	color: #333 !important;
+}
